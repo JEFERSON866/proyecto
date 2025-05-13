@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Mi Proyecto</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,38 +11,104 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #4CAF50;
             padding: 20px;
             text-align: center;
             color: white;
         }
-        main {
-            padding: 20px;
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            text-align: center;
         }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+
+        main {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .reseña {
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .reseña img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
         footer {
             background-color: #4CAF50;
-            padding: 10px;
-            text-align: center;
             color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .redes a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .redes a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Bienvenido a Mi Página Web</h1>
+        <h1>Bienvenido a Mi Proyecto</h1>
     </header>
+
+    <nav>
+        <a href="pagina1.html">Inicio</a>
+        <a href="pagina2.html">Servicios</a>
+        <a href="pagina3.html">Contacto</a>
+        <a href="pagina4.html">Sobre Nosotros</a>
+    </nav>
+
     <main>
-        <h2>Noticias</h2>
-        <p>Aquí publicaremos noticias y novedades sobre diversos temas.</p>
-        <h2>Documentos</h2>
-        <p>Subiremos documentos organizados para su descarga.</p>
+        <div class="reseña">
+            <h2>¿De qué trata mi proyecto?</h2>
+            <p>Mi proyecto busca brindar soluciones tecnológicas a pequeñas empresas, mejorando su productividad y gestión mediante herramientas digitales fáciles de usar.</p>
+            <img src="proyecto.jpg" alt="Imagen de mi proyecto">
+        </div>
     </main>
+
     <footer>
-        <p>© 2025 Mi Página Web</p>
+        <p><strong>Tu Nombre</strong></p>
+        <p>Dirección: Av. Ejemplo 123, Mi Ciudad</p>
+        <p>WhatsApp: <a href="https://wa.me/51987654321" style="color:white;">+51 987 654 321</a></p>
+        <div class="redes">
+            <a href="https://www.facebook.com/tuperfil" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/tuperfil" target="_blank">Instagram</a> |
+            <a href="mailto:tuemail@ejemplo.com">Correo</a>
+        </div>
     </footer>
+
 </body>
 </html>
