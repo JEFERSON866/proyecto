@@ -2,9 +2,144 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Jeferson García | Asesor Digital</title>
-    <link rel="stylesheet" href="estilos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeferson García | Tecnología y Contabilidad para Emprendedores</title>
+    <meta name="description" content="Portafolio de Jeferson García, asesor en herramientas digitales y contabilidad para emprendedores y pequeñas empresas." />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        .presentacion {
+            max-width: 1000px;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .texto {
+            flex: 1 1 400px;
+            padding: 20px;
+        }
+
+        .texto h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .texto p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .imagen {
+            flex: 1 1 300px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .btn-contacto {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-contacto:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .redes {
+            margin-top: 10px;
+        }
+
+        .redes a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .redes a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .presentacion {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .imagen, .texto {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -22,17 +157,31 @@
     </nav>
 
     <main>
-        <section id="inicio">
-            <h2>Bienvenido a mi página web</h2>
-            <p>¡Hola! Soy Jeferson García, y estoy aquí para ayudarte a emprender en el mundo digital.</p>
-            <!-- Imagen de perfil -->
-            <img src="proyecto.jpg" alt="Jeferson García" class="perfil-imagen" />
+        <section class="presentacion">
+            <div class="texto">
+                <h2>Bienvenido a mi página web</h2>
+                <p>
+                    ¡Hola! Soy Jeferson García, y estoy aquí para ayudarte a emprender en el mundo digital.
+                </p>
+                <a href="https://wa.me/51990601459" class="btn-contacto">Contáctame</a>
+            </div>
+            <div class="imagen">
+                <img src="proyecto.jpg" alt="Jeferson García - Proyecto" />
+            </div>
         </section>
     </main>
 
     <footer>
+        <p><strong>Jeferson García</strong></p>
+        <p>Dirección: Cas Los Potreros, Canchaque</p>
+        <p>WhatsApp: <a href="https://wa.me/51990601459">990 601 459</a></p>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100084474496320" target="_blank">Facebook</a> |
+            <a href="mailto:jeferson2003garcia@gmail.com">Correo</a>
+        </div>
+    </footer>
         <p>&copy; 2025 Jeferson García - Todos los derechos reservados</p>
     </footer>
-
+    
 </body>
 </html>
