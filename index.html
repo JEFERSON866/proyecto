@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jeferson García | Tecnología y Contabilidad para Emprendedores</title>
-    <meta name="description" content="Portafolio de Jeferson García, asesor en herramientas digitales y contabilidad para emprendedores y pequeñas empresas.">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Portafolio de Jeferson García, asesor en herramientas digitales y contabilidad para emprendedores y pequeñas empresas." />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <style>
         * {
             box-sizing: border-box;
@@ -46,30 +46,60 @@
 
         main {
             padding: 40px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
 
-        .reseña {
-            max-width: 800px;
+        .presentacion {
+            max-width: 1000px;
             background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
             padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
         }
 
-        .reseña h2 {
-            margin-bottom: 20px;
+        .texto {
+            flex: 1 1 400px;
+            padding: 20px;
+        }
+
+        .texto h2 {
             color: #4CAF50;
+            margin-bottom: 15px;
         }
 
-        .reseña img {
+        .texto p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .imagen {
+            flex: 1 1 300px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .imagen img {
             max-width: 100%;
             height: auto;
-            margin-top: 20px;
-            border-radius: 10px;
+            border-radius: 12px;
+        }
+
+        .btn-contacto {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-contacto:hover {
+            background-color: #45a049;
         }
 
         footer {
@@ -77,6 +107,7 @@
             color: white;
             text-align: center;
             padding: 20px;
+            margin-top: 40px;
         }
 
         footer a {
@@ -98,18 +129,14 @@
             text-decoration: underline;
         }
 
-        @media (max-width: 600px) {
-            .reseña {
-                padding: 20px;
+        @media (max-width: 768px) {
+            .presentacion {
+                flex-direction: column;
+                text-align: center;
             }
 
-            nav a {
-                display: block;
-                padding: 12px;
-            }
-
-            .reseña img {
-                max-width: 100%;
+            .imagen, .texto {
+                flex: 1 1 100%;
             }
         }
     </style>
@@ -128,13 +155,20 @@
     </nav>
 
     <main>
-        <div class="reseña">
-            <h2>Hola, soy Jeferson</h2>
-            <p>
-                Soy un entusiasta de la tecnología con el objetivo de ayudar a emprendedores y pequeñas empresas a ser más productivos y eficientes mediante el uso de herramientas digitales. Me estoy formando en el área contable y, aunque estoy dando mis primeros pasos, aprendo con dedicación cada día. Combino mi pasión por la tecnología con mi compromiso por brindar asesoría práctica, clara y accesible, especialmente para quienes recién comienzan o buscan mejorar su gestión.
-            </p>
-            <img src="proyecto.jpg" alt="Presentación visual del proyecto de Jeferson García">
-        </div>
+        <section class="presentacion">
+            <div class="texto">
+                <h2>Hola, soy Jeferson</h2>
+                <p>
+                    Soy un entusiasta de la tecnología con el objetivo de ayudar a emprendedores y pequeñas empresas a ser más productivos y eficientes mediante el uso de herramientas digitales.
+                    Me estoy formando en el área contable y, aunque estoy dando mis primeros pasos, aprendo con dedicación cada día.
+                    Combino mi pasión por la tecnología con mi compromiso por brindar asesoría práctica, clara y accesible, especialmente para quienes recién comienzan o buscan mejorar su gestión.
+                </p>
+                <a href="pagina3.html" class="btn-contacto">Contáctame</a>
+            </div>
+            <div class="imagen">
+                <img src="proyecto.jpg" alt="Jeferson García - Proyecto" />
+            </div>
+        </section>
     </main>
 
     <footer>
