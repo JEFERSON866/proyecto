@@ -1,10 +1,13 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    line-height: 1.6;
 }
 
+/* Cabecera */
 header {
     background-color: #4CAF50;
     color: white;
@@ -12,9 +15,17 @@ header {
     padding: 30px 10px;
 }
 
+header h1 {
+    margin: 0;
+}
+
+/* Navegación */
 nav {
     background-color: #333;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -22,27 +33,47 @@ nav a {
     text-decoration: none;
     display: inline-block;
     padding: 14px 20px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
     background-color: #4CAF50;
 }
 
+/* Secciones */
 main {
-    padding: 40px 20px;
+    padding: 20px 10px;
 }
 
 section {
-    margin-bottom: 60px;
     background-color: white;
-    padding: 20px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease-in-out;
 }
 
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo de pie de página */
 footer {
     background-color: #4CAF50;
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
